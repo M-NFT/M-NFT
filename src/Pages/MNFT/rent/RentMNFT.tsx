@@ -6,6 +6,7 @@ import { Input } from "./../../../Components/input/Input";
 import { AccountContext } from './../../../context/AccountState';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ProcessedRentMnft } from './../../../Modals/ProcessedRentMNFT';
+import { Login } from "../../../Components/login/Login";
 
 export interface RentFormMNFT {
     timeStart?: Date,
@@ -37,6 +38,10 @@ export const RentMNFT = () => {
             nav("/");
         }
     }, [state])
+
+    if (!account) {
+        return <Login />
+    }
 
     return (
         <Stack

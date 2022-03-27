@@ -13,7 +13,7 @@ import './index.css';
 
 
 const client = new ApolloClient({
-  uri: 'https://api.mnft.company/graphql/',
+  uri: 'https://api.mnft.company:65432/graphql/',
   cache: new InMemoryCache()
 });
 

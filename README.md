@@ -1,16 +1,14 @@
 # M-NFT  Evolution of NFT
-### Описание
-«MNFT» это технология модифицированного смарт контракта (M-NFT) для NFT токенов. Созданные и перенесённые на M-NFT токены могут размещать дополнительный слой (маску) поверх оригинального изображения. Технология позволит модифицировать NFT под запросы рекламного бизнеса, а также может быть использована в крипто гейминге, коллективном творчестве и защите авторских прав.
-NFT Токены можно как создавать, так и переносить на M-NFT с помощью одноимённого сервиса.
+### Description
 
-### Установка и запуск
+"MNFT" is a modified smart contract technology (M-NFT) for NFT tokens. Created and transferred to M-NFT tokens can place an additional layer (mask) on top of the original image. The technology will allow modifying NFT to meet the demands of the advertising business, and can also be used in crypto-gaming, collective creativity and copyright protection. NFT tokens can be both created and transferred to M-NFT using the service of the same name.
+### Installing and running
 ```
-git clone https://github.com/senitskiy/M-NFT.git
+git clone https://github.com/senitskiy/M-NFT/M-NFT.git
 yarn install
 yarn start
 ```
-
-### Не забудьте в корне проекта создать файл 
+### Don't forget to create the file
 .env
 ```
 REACT_APP_WEB3_STORAGE_KEY = ...

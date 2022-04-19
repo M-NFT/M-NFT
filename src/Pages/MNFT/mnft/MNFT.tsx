@@ -40,10 +40,10 @@ export const MNFT = () => {
   const { data: ResponseMNFT, loading, error } = useQuery(GET_MNFT, { variables: { address }});
   const nav = useNavigate();
 
-  if(loading) {
+  if(loading || !ResponseMNFT) {
     return <CircularProgress />;
   }
-  
+
   const { getMNFT: MNFT } = ResponseMNFT;  
 
   return (

@@ -38,12 +38,13 @@ export const MNFT = () => {
   const [isError, setIsError] = useState(false);
   const { address } = useParams();
   const { data: ResponseMNFT, loading, error } = useQuery(GET_MNFT, { variables: { address }});
-  const { getMNFT: MNFT } = ResponseMNFT;  
   const nav = useNavigate();
 
   if(loading) {
     return <CircularProgress />;
   }
+  
+  const { getMNFT: MNFT } = ResponseMNFT;  
 
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
